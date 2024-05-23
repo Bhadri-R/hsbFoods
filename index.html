@@ -132,7 +132,7 @@
 
         .subHeading {
             color: var(--secondary-color);
-            font-weight: 600;
+            font-weight: 500;
         }
 
 
@@ -236,8 +236,7 @@
 
 
 
-        .introSection,
-        .menuSection {
+        .introSection {
             width: 100%;
             height: fit-content;
             background-image: url(./assests/images/introBg.png);
@@ -258,7 +257,17 @@
 
         /* MENU SECTION STYLE STARTS HERE */
 
+        .menuSection {
 
+            width: 100%;
+            height: fit-content;
+            background-image: url(./assests/images/Menus\ \(3\).png);
+            background-size: contain;
+            font-family: var(--barlow-font);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
 
 
 
@@ -280,7 +289,17 @@
 
         /* MENU SECTION STYLE ENDS HERE */
 
+        /* TESTIMONIAL SECTION STARTS HERE */
+        .testimonial {
+            width: 100%;
+            height: fit-content;
+            background-image: url(./assests/images/testimonialBg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: var(--barlow-font);
+        }
 
+        /* TESTIMONIAL SECTION END HERE */
 
 
         /* GRAB A SEAT SECTION STARTS HERE */
@@ -331,7 +350,8 @@
         .footerTitle {
             font-weight: 600;
         }
-        .footerBaseIcons{
+
+        .footerBaseIcons {
             color: var(--primary-color);
             font-size: 20px;
         }
@@ -340,28 +360,14 @@
 
 
 
-        /* MEDIA QUERIES STARTS HERE */
 
-        @media only screen and (max-width: 768px) {
-            .navbar-nav .nav-item {
-                margin-left: 0px !important;
-            }
-        }
+        /* SECTION PADDINGS */
 
-        @media only screen and (max-width: 991.999px) {
+        /* SECTION PADDINGS */
 
-            .navbar-nav .nav-item,
-            .bookBtn {
-                margin-left: 0px !important;
-                padding: 5px 15px;
-            }
 
-            .introSectionMainCont,
-            .menuSection {
-                padding-top: 50px;
-            }
 
-        }
+
 
 
         @media only screen and (min-width: 991.999px) {
@@ -377,6 +383,69 @@
             }
 
 
+            .testimonial,
+            .menuSection,
+            .introSection,
+            .grabASeatSec,
+            .footerSection,
+            .footerBase {
+
+                padding: 50px;
+
+            }
+
+
+        }
+
+        @media only screen and (max-width: 991.999px) {
+
+            .navbar-nav .nav-item,
+            .bookBtn {
+                margin-left: 0px !important;
+                padding: 5px 15px;
+            }
+
+            .introSectionMainCont,
+            .menuSection {
+                padding-top: 50px;
+            }
+
+            h1 {
+                font-size: 50px;
+
+                /* color: var(--primary-color); */
+            }
+
+        }
+
+
+
+
+        @media only screen and (max-width: 768px) {
+            .navbar-nav .nav-item {
+                margin-left: 0px !important;
+            }
+
+            h1 {
+                font-size: 42px;
+
+                /* color: var(--primary-color); */
+            }
+        }
+
+        /* MEDIA QUERIES STARTS HERE */
+        @media only screen and (max-width: 576px) {
+
+
+            h1 {
+                font-size: 36px;
+
+
+            }
+
+            h5 {
+                font-size: 18px;
+            }
         }
 
         /* MEDIA QUERIES ENDS HERE */
@@ -446,8 +515,6 @@
 
     <section class="container">
         <div class="introSection">
-
-
             <div class="row">
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="introSectionMainCont">
@@ -497,6 +564,7 @@
             <div class="row g-4 pt-4">
 
 
+                
                 <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
                     <div class="menuCard">
                         <div class="menuTopImg">
@@ -505,6 +573,30 @@
                         </div>
                         <p class="dishName">
                             Lumpia with Suace
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
+                    <div class="menuCard">
+                        <div class="menuTopImg">
+                            <img src="./assests/images/dish-4.png" alt="" class="img-fluid ">
+
+                        </div>
+                        <p class="dishName">
+                            Egg and Cocumber
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
+                    <div class="menuCard">
+                        <div class="menuTopImg">
+                            <img src="./assests/images/dish-5.png" alt="" class="img-fluid ">
+
+                        </div>
+                        <p class="dishName">
+                           Tofu Chili
                         </p>
                     </div>
                 </div>
@@ -519,14 +611,27 @@
                         </p>
                     </div>
                 </div>
+                
                 <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
                     <div class="menuCard">
                         <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
+                            <img src="./assests/images/dish-4.png" alt="" class="img-fluid ">
 
                         </div>
                         <p class="dishName">
-                            Lumpia with Suace
+                            Egg and Cocumber
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
+                    <div class="menuCard">
+                        <div class="menuTopImg">
+                            <img src="./assests/images/dish-5.png" alt="" class="img-fluid ">
+
+                        </div>
+                        <p class="dishName">
+                           Tofu Chili
                         </p>
                     </div>
                 </div>
@@ -541,94 +646,20 @@
                         </p>
                     </div>
                 </div>
+                
                 <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
                     <div class="menuCard">
                         <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
+                            <img src="./assests/images/dish-4.png" alt="" class="img-fluid ">
 
                         </div>
                         <p class="dishName">
-                            Lumpia with Suace
+                            Egg and Cocumber
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
 
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center ">
-                    <div class="menuCard">
-                        <div class="menuTopImg">
-                            <img src="./assests/images/dish-1.png" alt="" class="img-fluid ">
-
-                        </div>
-                        <p class="dishName">
-                            Lumpia with Suace
-                        </p>
-                    </div>
-                </div>
+              
 
 
 
@@ -639,36 +670,22 @@
 
 
     <!-- TESTIMONIAL SECTION STARTS HERE -->
+
     <section class="container">
-        <div class="row pt-5">
-            <div class="col-12 text-center">
-                <h1 class="mainHeading">REVIEWS
-
-
-
-
-
-                </h1>
-                <h5 class="subHeading">What Our Customers Say About Us</h5>
+        <div class="testimonial">
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <h1 class="mainHeading">REVIEWS</h1>
+                    <h5 class="subHeading">What Our Customers Say About Us</h5>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-
-            </div>
-        </div>
-
-    </section>
 
 
 
 
-    <section class="testimonial">
-        <div class="container">
 
 
             <div class="responsive-container-block bg">
-
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -715,14 +732,70 @@
                                 </p>
                                 <div class="row">
                                     <div class="col-12 d-flex">
-
-
                                         <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png"
                                             class="testimonialUserImg">
+                                        <div class="ps-2 pt-2">
+                                            <p class="testimonialName mb-0 text-start">
+                                                Gopal Ram
+                                            </p>
+                                            <p class="testimonialUserDesign mb-0 text-start">
+                                                HOD of Stella Marys College
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <p class="textimonialCont pt-2 mb-0">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut
+                                    duis
+                                    pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                                    tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="responsive-container-block content">
+                                <p class="testimonialQuotes">
+                                    “
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png"
+                                            class="testimonialUserImg">
+                                        <div class="ps-2 pt-2">
+                                            <p class="testimonialName mb-0 text-start">
+                                                Gopal Ram
+                                            </p>
+                                            <p class="testimonialUserDesign mb-0 text-start">
+                                                HOD of Stella Marys College
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-
-
+                                <p class="textimonialCont pt-2 mb-0">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut
+                                    duis
+                                    pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                                    tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="responsive-container-block content">
+                                <p class="testimonialQuotes">
+                                    “
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png"
+                                            class="testimonialUserImg">
                                         <div class="ps-2 pt-2">
                                             <p class="testimonialName mb-0 text-start">
                                                 Gopal Ram
@@ -782,83 +855,6 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="responsive-container-block content">
-                                <p class="testimonialQuotes">
-                                    “
-                                </p>
-                                <div class="row">
-                                    <div class="col-12 d-flex">
-
-
-                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png"
-                                            class="testimonialUserImg">
-
-
-
-
-                                        <div class="ps-2 pt-2">
-                                            <p class="testimonialName mb-0 text-start">
-                                                Gopal Ram
-                                            </p>
-                                            <p class="testimonialUserDesign mb-0 text-start">
-                                                HOD of Stella Marys College
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="textimonialCont pt-2 mb-0">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut
-                                    duis
-                                    pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est
-                                    Lorem
-                                    ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
-                                    tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="responsive-container-block content">
-                                <p class="testimonialQuotes">
-                                    “
-                                </p>
-                                <div class="row">
-                                    <div class="col-12 d-flex">
-
-
-                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png"
-                                            class="testimonialUserImg">
-
-
-
-
-                                        <div class="ps-2 pt-2">
-                                            <p class="testimonialName mb-0 text-start">
-                                                Gopal Ram
-                                            </p>
-                                            <p class="testimonialUserDesign mb-0 text-start">
-                                                HOD of Stella Marys College
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="textimonialCont pt-2 mb-0">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut
-                                    duis
-                                    pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est
-                                    Lorem
-                                    ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
-                                    tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
-                                </p>
-                            </div>
-                        </div>
-
-
-
 
                     </div>
                     <div class="swiper-pagination container-block">
@@ -878,79 +874,85 @@
 
     <!-- GRAB A SEAT STARTS HERE -->
     <section class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="mainHeading">
-                    GRAB A SEAT
-                </h1>
-                <h5 class="subHeading">Reserve Now For a Delightful Experience</h5>
-            </div>
-            <div class="row pt-4">
-                <div class="col-lg-6">
+        <div class="grabASeatSec">
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"> <i
-                                        class="fa-regular fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="Name" aria-label="Name"
-                                    aria-describedby="basic-addon1">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="mainHeading">
+                        GRAB A SEAT
+                    </h1>
+                    <h5 class="subHeading">Reserve Now For a Delightful Experience</h5>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"> <i
+                                            class="fa-regular fa-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                                        aria-describedby="basic-addon1">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><ion-icon
-                                        name="people-outline"></ion-icon></span>
-                                <input type="text" class="form-control" placeholder="1 person
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><ion-icon
+                                            name="people-outline"></ion-icon></span>
+                                    <input type="text" class="form-control" placeholder="1 person
                                 ">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><ion-icon
-                                        name="calendar-outline"></ion-icon></span>
-                                <input type="date" class="form-control" id="dateInput" aria-describedby="basic-addon1">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><ion-icon
+                                            name="calendar-outline"></ion-icon></span>
+                                    <input type="date" class="form-control" id="dateInput"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><ion-icon
+                                            name="time-outline"></ion-icon></span>
+                                    <input type="time" class="form-control" id="timeInput"
+                                        aria-describedby="basic-addon1">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><ion-icon
-                                        name="time-outline"></ion-icon></span>
-                                <input type="time" class="form-control" id="timeInput" aria-describedby="basic-addon1">
-                            </div>
+
+
+
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"> <ion-icon
+                                    name="mail-outline"></ion-icon></span>
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Name"
+                                aria-describedby="basic-addon1">
                         </div>
+
+
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"> <ion-icon
+                                    name="call-outline"></ion-icon></span>
+                            <input type="text" class="form-control" placeholder="Phone" aria-label="Name"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+
                     </div>
+                    <div class="col-lg-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31245.049204777348!2d79.05379440534833!3d11.791000259264404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab5e8d478071cb%3A0x83d0fe26215d33ee!2sPeelamedu%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1716474682363!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
-
-
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"> <ion-icon
-                                name="mail-outline"></ion-icon></span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Name"
-                            aria-describedby="basic-addon1">
                     </div>
-
-
-
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"> <ion-icon
-                                name="call-outline"></ion-icon></span>
-                        <input type="text" class="form-control" placeholder="Phone" aria-label="Name"
-                            aria-describedby="basic-addon1">
-                    </div>
-
-
-                </div>
-                <div class="col-lg-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31245.049204777348!2d79.05379440534833!3d11.791000259264404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab5e8d478071cb%3A0x83d0fe26215d33ee!2sPeelamedu%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1716474682363!5m2!1sen!2sin"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -959,8 +961,8 @@
 
     <!-- FOOTER STARTS HERE -->
 
-    <footer class="container">
-        <div>
+    <footer class="container pt-4">
+        <div class="footerSection">
             <div class="row gy-4 ">
                 <div class="col-lg-4 col-md-6 col-11 ">
                     <div class="row">
@@ -1002,23 +1004,23 @@
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
                         <div class="col-11">
-             <p>               hsbfoods.com</p>
+                            <p> hsbfoods.com</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-1">
-                          <p>  <ion-icon name="call-outline"></ion-icon></p>
+                            <p> <ion-icon name="call-outline"></ion-icon></p>
                         </div>
                         <div class="col-11">
-                       <p>     9876543214</p>
+                            <p> 9876543214</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-1">
-                           <p> <ion-icon name="location-outline"></ion-icon></p>
+                            <p> <ion-icon name="location-outline"></ion-icon></p>
                         </div>
                         <div class="col-11">
-                         <p>   Near PSG College Peelamedu, Cloimbatore-21</p>
+                            <p> Near PSG College Peelamedu, Cloimbatore-21</p>
                         </div>
                     </div>
                 </div>
@@ -1027,17 +1029,17 @@
         </div>
         <div class="footerBase pt-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 pe-0">
                     <span class="footerBaseIcons">
 
-                 
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-youtube"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                </span>
+
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </span>
                 </div>
-                <div class="col-8 text-end">
+                <div class="col-8 text-end ps-0">
                     <p>
                         &copy; 2024 HSB FOODS | All rights reserved
                     </p>
