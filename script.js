@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function handleScroll() {
     const scrollPosition = window.scrollY;
-    const targetHeight = 150;
+    const targetHeight = 100;
     if (scrollPosition >= targetHeight) {
 
 
