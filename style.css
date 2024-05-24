@@ -301,7 +301,7 @@ iframe {
 .introRight {
     padding-top: 20px;
     animation-name: introImgAnim;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
@@ -314,7 +314,7 @@ iframe {
     }
 
     100% {
-        transform: translateY(-50px);
+        transform: translateY(-25px);
     }
 
 }
